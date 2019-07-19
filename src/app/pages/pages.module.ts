@@ -17,6 +17,7 @@ import { ProgessComponent } from './progess/progess.component';
 // temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 /**
  * Módulo de páginas PRINCIPALES
@@ -29,7 +30,8 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
         Graficas1Component,
         ProgessComponent,
         IncrementadorComponent,
-        GraficoDonaComponent
+        GraficoDonaComponent,
+        AccountSettingsComponent
     ],
     exports: [                // cuando los componentes tambien tengan que ser utilizados
         DashboardComponent,   // en otros componentes que se encuentren fuera de este módulo.
