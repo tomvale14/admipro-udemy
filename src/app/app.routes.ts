@@ -4,7 +4,7 @@ import { RegisterComponent } from './login/register.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
 
 // ==============================================================
-//   Definimos las Rutas Principales 
+//   Definimos las RUTAS PRINCIPALES
 // ==============================================================
 
 const appRoutes: Routes = [

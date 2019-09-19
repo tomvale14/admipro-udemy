@@ -20,7 +20,7 @@ export class BreadcrumbsComponent implements OnInit {
       // creo una suscripción al observable que devuelve el router.events
       this.getDatosRoute().subscribe( datos => {
 
-              console.log( datos );
+              // console.log( datos );
 
               // 1. Titulo de la página html y del breadcumbs
               this.titulo = datos.titulo;

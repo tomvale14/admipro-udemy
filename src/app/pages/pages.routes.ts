@@ -8,12 +8,17 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 
+import { LoginGuardGuard } from '../services/guards/login-guard.guard';
 
+// ==============================================================
+//   Definimos las RUTAS PROTEGIDAS POR GUARDS
+// ==============================================================
 
 const pagesRoutes: Routes = [
     {
         path: '',
-        component: PagesComponent,                    // Página Principal
+        component: PagesComponent,                    // Página
+        canActivate: [ LoginGuardGuard ],             // Implementa el servicio del Guard para controlar quien puede acceder a las páginas
         children: [                                   // router-outlet de las páginas hijas de pages.component
             { path: 'dashboard', component: DashboardComponent, data: { titulo: 'Dashboard' } },
             { path: 'progress', component: ProgessComponent, data: { titulo: 'Progress' } },
